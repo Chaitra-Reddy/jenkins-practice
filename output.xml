@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.8.5 on win32)" generated="20210913 13:11:52.025">
+<suite id="s1" name="Tc1" source="C:\STUDY\Robot Practice\ForGit&amp;JenkinsPractice\TestCases\tc1.robot">
+<test id="s1-t1" name="Search for pen">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210913 13:11:52.317" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in/'.</msg>
+<status status="PASS" starttime="20210913 13:11:52.316" endtime="20210913 13:11:57.436"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>//*[@id="twotabsearchtextbox"]</arg>
+</arguments>
+<status status="PASS" starttime="20210913 13:11:57.439" endtime="20210913 13:11:57.500"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="twotabsearchtextbox"]</arg>
+<arg>pen</arg>
+</arguments>
+<msg timestamp="20210913 13:11:57.501" level="INFO">Typing text 'pen' into text field '//*[@id="twotabsearchtextbox"]'.</msg>
+<status status="PASS" starttime="20210913 13:11:57.501" endtime="20210913 13:11:57.662"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="nav-search-submit-button"]</arg>
+</arguments>
+<msg timestamp="20210913 13:11:57.663" level="INFO">Clicking element '//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20210913 13:11:57.662" endtime="20210913 13:12:01.169"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210913 13:12:03.172" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210913 13:12:01.169" endtime="20210913 13:12:03.172"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210913 13:12:03.172" endtime="20210913 13:12:05.315"></status>
+</kw>
+<status status="PASS" starttime="20210913 13:11:52.316" endtime="20210913 13:12:05.316" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210913 13:11:52.027" endtime="20210913 13:12:05.319"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Tc1">Tc1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
